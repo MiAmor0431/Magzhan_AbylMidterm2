@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Title</title>
+  <link rel="stylesheet" href="/movie/movie.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="logo">СДУ</div>
+    <nav>
+      <a class="header_a" href="movie.html">Films</a>
+      <a class="header_a" id="favoritesLink" href="#">Favorites</a>
+    </nav>
+    <div class="user-actions">
+      <div class="search_movies">
+        <input type="text" class="search" id="searchInput" placeholder="Enter the movie...">
+        <ul id="suggestions"></ul>
+      </div>
+      <button class="notifications">🔔</button>
+      <button class="login">Войти</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="content">
+    <div class="content banner" id="movieBanner">
+      <div class="banner-content">
+        <h2>Movie Title</h2>
+        <p>Movie Description</p>
+        <button class="show-selection" id="show_selection">Watch Now</button>
+      </div>
+    </div>
+
+    <div class="content subscription-options">
+      <button>30 days subscription free</button>
+      <button>Activate certificate</button>
+    </div>
+
+    <h3>The best movies of all time</h3>
+    <div class="container">
+      <div class="film-list">
+        <div class="movie-item">Iron Man</div>
+        <div class="movie-item">Batman 2022</div>
+        <div class="movie-item">The Social Network</div>
+        <div class="movie-item">Need for speed</div>
+        <div class="movie-item">Green book</div>
+        <div class="movie-item">Gran Turismo</div>
+        <div class="movie-item">Flash</div>
+        <div class="movie-item">Robin Hood</div>
+         <div class="movie-item">Billionaire Boys Club</div>
+        <div class="movie-item">The wolf of Wall Street</div>
+        <div class="movie-item">Titanic</div>
+        <div class="movie-item">John Wick</div>
+      </div>
+    </div>
+
+    <h3>The best cartoon of all time</h3>
+    <div class="film-list">
+      <div class="movie-item">Puss in Boots: The Three Diablos</div>
+      <div class="movie-item">Cars</div>
+      <div class="movie-item">Big Hero</div>
+      <div class="movie-item">Shrek</div>
+      <div class="movie-item">Buffalo Kids</div>
+      <div class="movie-item">Moonzy: Homecoming</div>
+      <div class="movie-item">Tom and Jerry</div>
+      <div class="movie-item">Moana</div>
+      <div class="movie-item">Masha and Beer</div>
+      <div class="movie-item">Rise of the Guardians</div>
+      <div class="movie-item">How to train your dragon</div>
+      <div class="movie-item">Wreck-it Ralph</div>
+    </div>
+
+    <h3>The best Anime of all time</h3>
+    <div class="film-list">
+      <div class="movie-item">Attack on titan</div>
+      <div class="movie-item">Naruto</div>
+      <div class="movie-item">One piece</div>
+      <div class="movie-item">Jujutsu kaisen</div>
+      <div class="movie-item">Borute</div>
+      <div class="movie-item">Violet Evergarden</div>
+      <div class="movie-item">Chainsaw Man</div>
+      <div class="movie-item">Desu noto</div>
+      <div class="movie-item">Josee to Tora to Sakana-tachi</div>
+      <div class="movie-item">Kimi no na wa</div>
+      <div class="movie-item">Jojo no Kimyou na Bouken</div>
+      <div class="movie-item">Hello world</div>
+    </div>
+
+
+    <div class="movie_details" style="display: none;">
+      <h2>Movie Detail</h2>
+      <p>Details of the selected movie will appear here.</p>
+      <button onclick="goBack()">Back to Movies</button>
+    </div>
+  </div>
+  <div id="main_grid" class="main_grid">
+
+  </div>
+  <div id="popup_container" class="popup_container"></div>
+  <div class="popup_container">
+  </div>
+
+</main>
+
+
+<script src="/movie/movie.js"></script>
+</body>
+</html>

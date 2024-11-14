@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Hub</title>
+    <link rel="stylesheet" href="/recipe/recipe.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">Recipe Hub</div>
+        <nav>
+            <a class="header_a" href="#" id="allRecipesLink">Recipes</a> <!-- Добавлен ID для обработки клика -->
+            <a class="header_a" href="#" id="favoritesLink">Favorites</a> <!-- Добавлен ID для обработки клика -->
+        </nav>
+        <div class="user-actions">
+            <button class="category-btn">Categories</button>
+            <div class="category-menu" id="categoryMenu">
+                <button class="category-option" data-category="Dessert">Dessert</button>
+                <button class="category-option" data-category="Breakfast">Breakfast</button>
+                <button class="category-option" data-category="Lunch">Lunch</button>
+                <button class="category-option" data-category="Dinner">Dinner</button>
+            </div>
+            <div class="search_recipes">
+                <input type="text" class="search" id="searchInput" placeholder="Search for a recipe...">
+            </div>
+            <button class="notifications">🔔</button>
+            <button class="login">Login</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="content">
+        <h3>The best recipes of all time</h3>
+        <div class="container">
+            <div id="main_grid" class="main_grid"></div>
+        </div>
+    </div>
+
+    <div id="popup_container" class="popup_container"></div>
+</main>
+
+<script src="/recipe/recipe.js"></script>
+</body>
+</html>
